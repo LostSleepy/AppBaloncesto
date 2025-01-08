@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ScoreActivity">
+
+        <TextView
+            android:id="@+id/local_vs_visitor_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/text_black"
+            android:text="@string/local_vs_visitor" />
+
+        <TextView
+            android:id="@+id/local_score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="72sp"
+            android:textColor="@color/text_black"
+            android:layout_below="@id/local_vs_visitor_text" />
+
+        <TextView
+            android:id="@+id/visitor_score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="72sp"
+            android:textColor="@color/text_black"
+            android:layout_below="@id/local_score_text" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/text_black"
+            android:layout_below="@id/visitor_score_text"
+            android:text="Resultado" />
+
+    </RelativeLayout>
+</layout>
